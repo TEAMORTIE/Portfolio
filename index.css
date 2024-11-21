@@ -1,0 +1,286 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: rgb(190, 190, 190);
+  background-image: url("img/fond2.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Orbitron", sans-serif;
+}
+header {
+  z-index: 3;
+  position: fixed;
+  top: -2em;
+  left: 25%;
+  height: 6em;
+  background-color: rgb(124, 124, 124);
+  border-radius: 2em;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+header button {
+  margin-top: 1em;
+  margin-right: 2em;
+  font-size: large;
+  color: black;
+  text-transform: uppercase;
+  background-color: rgb(180, 180, 180);
+  border-radius: 1em;
+  box-shadow: black 10px 10px 10px;
+  transition: all 0.3s ease;
+}
+header button:hover {
+  background-color: black;
+  color: aliceblue;
+  transform: scale(110%);
+  box-shadow: rgb(60, 60, 60) 10px 10px 10px;
+}
+header h2 {
+  margin-top: 2em;
+  margin-right: 3em;
+}
+h1 {
+  font-size: 1em !important;
+}
+.container {
+  height: 150vh;
+  background-size: 100%;
+}
+
+.planet img {
+  width: 10%;
+  height: 10%;
+}
+.planet {
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+}
+.text1,
+.text2 {
+  font-family: "Rubik Glitch", system-ui;
+  display: flex;
+  justify-content: center;
+  font-weight: 300 !important;
+  font-size: 5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: transparent; /* On rend le texte transparent pour appliquer le fond */
+  background-image: url(img/lune.jpg);
+  background-position: 50% 50%;
+  background-size: cover; /* Adapte l'image au texte */
+  -webkit-background-clip: text; /* Applique la texture au texte */
+  background-clip: text;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+}
+#text,
+#text2 {
+  padding-top: 20%;
+}
+#text2 {
+  display: none;
+}
+
+.dev {
+  margin-left: 15%;
+  width: 70%;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bolder !important;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(190, 190, 190);
+  text-shadow: 0 5px 10px rgb(79, 79, 79);
+  text-align: center;
+}
+
+.dev2 {
+  margin-left: 15%;
+  width: 70%;
+  opacity: 0;
+  position: absolute;
+  top: 180%;
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: rgb(190, 190, 190);
+  text-shadow: 0 5px 10px rgb(76, 73, 73);
+  text-align: center;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+strong {
+  font-size: 1.2em;
+}
+.fusee img {
+  rotate: 90deg;
+  width: 50%;
+}
+.fusee {
+  position: absolute;
+  left: 50%;
+  margin-top: -10em;
+  opacity: 0;
+  text-align: center;
+}
+.satellite img {
+  width: 30%;
+}
+.satellite {
+  top: 300%;
+  left: 20%;
+  position: absolute;
+}
+.propos {
+  margin-top: 25em;
+  display: flex;
+  margin-left: 1%;
+  font-weight: bold;
+  color: rgb(191, 191, 191);
+  text-shadow: 0 0 20px rgb(127, 111, 111);
+  font-size: 1.3em;
+}
+.propos img {
+  width: 20%;
+  height: 20%;
+}
+li {
+  margin-bottom: 1em;
+}
+h2 {
+  text-transform: uppercase;
+  text-shadow: 0 0 20px rgb(127, 111, 111);
+}
+.projet {
+  margin-left: 15%;
+  width: 70%;
+  margin-top: 5em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 2em;
+  text-shadow: 0 0 20px rgb(127, 111, 111);
+}
+.block-image img {
+  border-radius: 2em;
+
+  width: 400px;
+}
+.block-image {
+  margin-left: 2em;
+  display: flex;
+  object-fit: cover;
+  flex-direction: column;
+  align-items: center;
+}
+.horizontal {
+  width: 250%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(img/asteroide-removebg-preview.png);
+  background-size: 10%;
+}
+.horizontal p {
+  font-size: 1.5em;
+  color: rgb(177, 177, 177);
+  font-weight: bold;
+}
+.horizontal button {
+  margin-top: 1em;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid white;
+  border-radius: 1em;
+  background-size: cover;
+  background-image: url("https://img.freepik.com/photos-gratuite/champ-etoiles-rougeoyantes-illumine-fond-galaxie-sombre-generee-par-ia_188544-9646.jpg");
+  padding: 1em 2em 1em 2em;
+  transition: all 0.3s ease;
+}
+.horizontal img {
+  border: 1px grey solid;
+}
+
+.horizontal button:hover {
+  transform: scale(110%);
+  filter: grayscale(2);
+}
+.competence {
+  font-weight: bold;
+
+  color: #ff7525;
+  margin-top: 5em;
+  text-align: center;
+}
+.titre {
+  color: #ff7525;
+  text-align: center;
+  font-size: 3em;
+}
+.trou img {
+  margin-top: 15em;
+  left: 0;
+  width: 70%;
+  animation: light 2s linear infinite;
+}
+
+@keyframes light {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.4);
+  }
+}
+.text-competence1 {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50em;
+  padding: 4em 1em;
+  border: 2px rgb(66, 43, 0) solid;
+  top: 30%;
+  left: -25%;
+
+  position: absolute;
+}
+.text-competence2 {
+  position: absolute;
+  top: 30%;
+  left: -25%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50em;
+  padding: 3em 2em;
+  border: 2px rgb(66, 43, 0) solid;
+}
+.text-competence3 {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50em;
+  padding: 4em 1em;
+  border: 2px rgb(66, 43, 0) solid;
+  top: 30%;
+  left: -25%;
+  position: absolute;
+}
+.rond {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.rond img {
+  width: 1800px;
+  height: 400px;
+}
