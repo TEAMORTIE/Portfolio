@@ -3,151 +3,991 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Kévin Bulté</title>
-    <link rel="stylesheet" href="index.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oi&family=Press+Start+2P&family=Questrial&family=Roboto+Slab:wght@100..900&family=Rubik+Glitch&family=Shrikhand&family=Teko:wght@300..700&display=swap");
-    </style>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oi&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Questrial&family=Roboto+Slab:wght@100..900&family=Rubik+Glitch&family=Shrikhand&family=Teko:wght@300..700&display=swap");
-    </style>
+    <meta name="robots" content="index, follow" />
+    <title>Portfolio de Kévin Bulté - Développeur Web</title>
+
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/logo_portfolio.jpg"
+    />
+    <link rel="icon" type="image/x-icon" href="img/logo_portfolio.jpg" />
+    <link
+      rel="shortcut icon"
+      href="img/logo_portfolio.jpg"
+      type="image/x-icon"
+    />
+    <!--  META DESCRIPTION ECT-->
+
+    <head>
+      <meta
+        name="description"
+        content="Explorez mon portfolio, étudiant en  développement web. Découvrez mes compétences en développement Front-End, Back-End et mes projets web innovants sur mon site kevin-bulte.fr."
+      />
+      <meta
+        name="keywords"
+        content="kevin bulte site, portfolio, développeur web, portfolio développeur web, projets web, développement Front-End, développement Back-End"
+      />
+      <meta name="author" content="Kevin Bulte" />
+    </head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#000" />
+
+    <!-- META OG -->
+
+    <meta
+      property="og:title"
+      content="Portfolio Kévin Bulté - Développeur Web"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez mon portfolio : projets, compétences et capacités. Étudiant en développement web, je recherche une alternance pour septembre 2025."
+    />
+
+    <meta
+      property="og:image"
+      content="https://www.kevin-bulte.fr/img/logo_portfolio.jpg"
+    />
+    <meta property="og:url" content="https://www.kevin-bulte.fr" />
+    <meta property="og:type" content="website" />
+
+    <!-- TWITTER CARDS-->
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:title"
+      content="Portfolio Kévin Bulté - Développeur Web"
+    />
+    <meta
+      property="twitter:description"
+      content="Découvrez mon portfolio : projets, compétences et capacités. Étudiant en développement web, je recherche une alternance pour septembre 2025."
+    />
+
+    <meta name="twitter:image" content="img/logo_portfolio.jpg" />
+    <meta
+      name="twitter:site"
+      content="@teamortie
+  "
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <!-- Animation AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
+
   <body>
-    <!-- <header>
-      <h2>Portfolio</h2>
-      <a href=""><button>Accueil</button></a>
-      <a href=""><button>à propos</button></a>
-      <a href=""><button>Réalisations</button></a>
-    </header>
--->
-    <main>
-      <div id="text">
-        <div class="text1"><h1>PORTFOLIO</h1></div>
+    <div id="tel">
+      <nav>
+        <div class="info" id="info">?</div>
+        <div class="info2" id="info2">
+          Si vous souhaitez une version de mon portfolio plus complet veuillez
+          l'ouvrir sur ordinateur.
+        </div>
+
+        <div id="menu_burger_close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+
+        <div id="menu_burger_open">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+        <div id="menu_burger">
+          <a class="bouton_burger" href="#projet">Projets</a>
+          <a class="bouton_burger" href="#competence">Compétences</a>
+          <a class="bouton_burger" href="#skills">Skills</a>
+          <a class="bouton_burger" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+
+    <main id="main">
+      <div style="padding: 2em" class="tel">
+        <div>
+          <h1>Kévin Bulté</h1>
+          <h2>Développeur web</h2>
+        </div>
+      </div>
+      <div class="cv">
+        <a class="cv1" download="CV_Kévin_Bulté" href="img/CV_Kévin_Bulté.pdf"
+          >Télécharger mon cv</a
+        >
+        <a id="savoir" class="cv2" href="#">En savoir plus</a>
+      </div>
+      <div class="tel">
+        <p>Avant toute chose, je me présente. J'ai 18 ans</p>
+        <p>Actuellement en 1ère année de développement Web à Need For School</p>
+        <p>Je suis passioné par l'informatique et le développement web</p>
+        <p>
+          Je suis actuellement à la recherche d'un stage pour mai 2025 pendant
+          deux mois, puis d'une alternance pour l'année 2025/2026
+        </p>
+      </div>
+      <div class="pc">
+        <div class="scroll">
+          <div class="scroll_fleche1"></div>
+          <div class="scroll_fleche2"></div>
+          <div class="scroll_fleche3"></div>
+        </div>
       </div>
 
-      <div id="text2">
-        <div class="text2">PORTFOLIO</div>
-        <div class="text2">Kévin Bulté</div>
+      <div class="reseaux">
+        <ul class="example-2">
+          <li class="icon-content">
+            <a
+              href="https://www.linkedin.com/in/k%C3%A9vin-bult%C3%A9-375057308"
+              aria-label="LinkedIn"
+              data-social="linkedin"
+              target="_blank"
+            >
+              <div class="filled"></div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-linkedin"
+                viewBox="0 0 16 16"
+                xml:space="preserve"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+            <div class="tooltip">LinkedIn</div>
+          </li>
+          <li class="icon-content">
+            <a
+              target="_blank"
+              href="https://github.com/TEAMORTIE"
+              aria-label="GitHub"
+              data-social="github"
+            >
+              <div class="filled"></div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-github"
+                viewBox="0 0 16 16"
+                xml:space="preserve"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+            <div class="tooltip">GitHub</div>
+          </li>
+          <li class="icon-content">
+            <a
+              href="https://www.instagram.com/keeevv1"
+              aria-label="Instagram"
+              data-social="instagram"
+              target="_blank"
+            >
+              <div class="filled"></div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+                xml:space="preserve"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+            <div class="tooltip">Instagram</div>
+          </li>
+          <li class="icon-content">
+            <a
+              href="mailto:bulte.kevin@nfs.school"
+              aria-label="Email"
+              data-social="Email"
+              target="_blank"
+            >
+              <div class="filled"></div>
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg
+                fill="currentColor"
+                height="800px"
+                width="800px"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 75.294 75.294"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M66.097,12.089h-56.9C4.126,12.089,0,16.215,0,21.286v32.722c0,5.071,4.126,9.197,9.197,9.197h56.9
+                      c5.071,0,9.197-4.126,9.197-9.197V21.287C75.295,16.215,71.169,12.089,66.097,12.089z M61.603,18.089L37.647,33.523L13.691,18.089
+                      H61.603z M66.097,57.206h-56.9C7.434,57.206,6,55.771,6,54.009V21.457l29.796,19.16c0.04,0.025,0.083,0.042,0.124,0.065
+                      c0.043,0.024,0.087,0.047,0.131,0.069c0.231,0.119,0.469,0.215,0.712,0.278c0.025,0.007,0.05,0.01,0.075,0.016
+                      c0.267,0.063,0.537,0.102,0.807,0.102c0.001,0,0.002,0,0.002,0c0.002,0,0.003,0,0.004,0c0.27,0,0.54-0.038,0.807-0.102
+                      c0.025-0.006,0.05-0.009,0.075-0.016c0.243-0.063,0.48-0.159,0.712-0.278c0.044-0.022,0.088-0.045,0.131-0.069
+                      c0.041-0.023,0.084-0.04,0.124-0.065l29.796-19.16v32.551C69.295,55.771,67.86,57.206,66.097,57.206z"
+                  />
+                </g>
+              </svg>
+            </a>
+            <div class="tooltip">Email</div>
+          </li>
+        </ul>
       </div>
-      <div class="dev">Dévellopeur web</div>
-      <div class="dev2">
-        <br />
-        <br />À travers ce portfolio réalisé par mes soins, <br />
-        vous découvrirez l'ensemble de mes réalistions, mes compétences, qui je
-        suis, ce que je recherche, ainsi que mes coordonnées pour me contacter
-        si besoin.
-        <br />
-        <br />
-        Moi c'est Kévin, <br />
-        élève en dévelopement web et web mobile à Need For School
-      </div>
-      <div class="satellite">
-        <img src="img/satellite-removebg-preview.png" alt="" />
-      </div>
-      <div class="container">
-        <div class="planet">
+
+      <div class="pc">
+        <div class="text-container">
+          <div class="text2"><h1>PORTFOLIO</h1></div>
+          <div class="text2">Kévin Bulté</div>
+        </div>
+        <div class="dev">Dévellopeur web</div>
+        <div class="dev2">
+          <br />
+          <br />À travers ce portfolio réalisé par mes soins, <br />
+          vous allez voyager pour découvrir l'ensemble de mes réalisations, mes
+          compétences, qui je suis, ce que je recherche, ainsi que mes
+          coordonnées pour me contacter si besoin.
+          <br />
+          <br />
+          Moi c'est Kévin, <br />
+          Étudiant en développement web et web mobile à
+          <a
+            target="_blank"
+            style="color: white; cursor: pointer"
+            href="https://www.needfor-school.com/"
+          >
+            Need For School</a
+          >
+        </div>
+        <div class="satellite">
           <img
-            class="image-planete"
-            src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Populated_Planet.png"
-            alt=""
+            src="img/satellite-removebg-preview.png"
+            alt="satellite autour de la terre "
+            loading="lazy"
           />
         </div>
-      </div>
-      <div class="fusee">
-        <img src="img/fusee.gif" alt="" />
-      </div>
-      <div class="propos">
-        <img src="img/mars.png" alt="" />
-        <div class="textblock">
-          <h2>à propos de moi</h2>
-          <ul>
-            <li>Kévin, 18 ans</li>
-            <li>
-              Actuellement en 1ère Année de dévelopement Web à Need For School
-            </li>
-            <li>
-              Passionée de d'informatique, de codage, de programmation <br />
-              et de beau site
-            </li>
-            <li>
-              Et le plus important : je suis à la recherche d'une alternance
-              <br />
-              en dévellopement Web !
-            </li>
-          </ul>
+
+        <div class="container">
+          <div class="planet">
+            <div class="etoile_filante">
+              <script
+                src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                type="module"
+              ></script>
+              <dotlottie-player
+                src="https://lottie.host/4fa106a2-1437-467c-b8c6-3104bbc73c78/ylHV9Q82mF.lottie"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+              ></dotlottie-player>
+            </div>
+            <div class="trait_container">
+              <div id="verspropos" class="trait hg">
+                <a href="#">A propos</a>
+              </div>
+
+              <div class="trait bg"><a href="#realisation">Réalisation</a></div>
+
+              <div class="trait hd"><a href="#competence">Compétences</a></div>
+
+              <div class="trait bd"><a href="#skills">Skills</a></div>
+            </div>
+            <img
+              class="image-planete"
+              src="img/Planet.png"
+              alt="planete terre "
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div class="fusee">
+          <img src="img/fusee.gif" alt="fusée" loading="lazy" />
+        </div>
+        <div class="propos" data-aos="fade-up">
+          <img src="img/mars.png" alt="une planete " loading="lazy" />
+          <div class="textblock">
+            <h2>À propos de moi</h2>
+            <ul>
+              <li>Avant toute de chose, je me présente. J'ai 18 ans</li>
+              <li>
+                Actuellement en 1ère année de développement Web à Need For
+                School
+              </li>
+              <li>
+                Je suis passionné par l'informatique et le développement web
+              </li>
+              <li>
+                Je suis actuellement à la recherche d'un stage pour mai 2025
+                pendant deux mois, puis d'une alternance pour l'année 2025/2026
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="projet">
-        <h2>Mes réalistions</h2>
+      <div id="realisation" class="projet" data-aos="fade-up">
+        <h2 class="titre">Mes réalisations</h2>
         <p>
           Au cours de mes études, j'ai eu l'opportunité de réaliser plusieurs
           projets, que ce soit dans le cadre des cours ou pour des initiatives
-          personnelles. Cela m'a permis de concrétiser quelques réalisations
-          significatives.
+          personnelles. Cela m'a permis de réaliser plusieurs projets
+          significatifs.
+        </p>
+
+        <div class="projet_container" data-aos="fade-up">
+          <a
+            target="_blank"
+            href="https://teamortie.github.io/cine-flix/html/fiction.html"
+          >
+            <div class="pr projet1">
+              <img
+                class="primage"
+                src="img/cineflix2.png"
+                alt="projet 1 cinéflix"
+                loading="lazy"
+              />
+              <p>Site de streaming</p>
+              <p class="sous-titre">Projet cours</p>
+              <a
+                target="_blank"
+                href="https://teamortie.github.io/cine-flix/html/fiction.html"
+                >Voir le site</a
+              >
+            </div></a
+          >
+          <a target="_blank" href="http://wega3918.odns.fr">
+            <div class="pr projet1">
+              <img
+                class="primage"
+                src="img/herosos.png"
+                alt="projet heros sos "
+                loading="lazy"
+              />
+              <p>Site Heros SOS</p>
+
+              <p class="sous-titre">Projet cours</p>
+              <a target="_blank" href="http://wega3918.odns.fr">Voir le site</a>
+            </div>
+          </a>
+          <a target="_blank" href="https://teamortie.github.io/Portfolio-Zoe">
+            <div class="pr projet1">
+              <img
+                class="primage"
+                src="img/projet_portfolio.png"
+                alt=" portfolio "
+                loading="lazy"
+              />
+              <p>Portfolio</p>
+
+              <p class="sous-titre">Projet Perso</p>
+              <a
+                target="_blank"
+                href="https://teamortie.github.io/Portfolio-Zoe"
+                >Voir le site</a
+              >
+            </div></a
+          >
+          <a target="_blank" href="https://teamortie.github.io/ai/">
+            <div class="pr projet2">
+              <img
+                class="primage"
+                src="img/ia_projet.png"
+                alt="site intelligence artificielle"
+                loading="lazy"
+              />
+              <p>Site intelligence artificielle</p>
+              <p class="sous-titre">Projet cours</p>
+              <a target="_blank" href="https://teamortie.github.io/ai/"
+                >Voir le site</a
+              >
+            </div></a
+          >
+          <a target="_blank" href="https://teamortie.github.io/Restyle/">
+            <div class="pr projet2">
+              <img
+                class="primage"
+                src="img/restyle.png"
+                alt="site vente de vêtements"
+                loading="lazy"
+              />
+              <p>site revente de vêtements</p>
+              <p class="sous-titre">Projet cours</p>
+              <a target="_blank" href="https://teamortie.github.io/Restyle/"
+                >Voir le site</a
+              >
+            </div></a
+          >
+          <a
+            target="_blank"
+            href="https://teamortie.github.io/pixel-responsive/"
+          >
+            <div class="pr projet2">
+              <img
+                class="primage"
+                src="img/backtopixel.png"
+                alt="site vitrine vente de console"
+                loading="lazy"
+              />
+              <p>site vitrine</p>
+              <p class="sous-titre">Projet cours</p>
+              <a
+                target="_blank"
+                href="https://teamortie.github.io/pixel-responsive/"
+                >Voir le site</a
+              >
+            </div>
+          </a>
+        </div>
+        <div class="container_fleche prochain">
+          <div class="fleche"></div>
+        </div>
+
+        <div class="container_fleche2 prochain">
+          <div class="fleche2"></div>
+        </div>
+      </div>
+
+      <h2 class="titre" id="competence">Mes compétences</h2>
+      <p class="sous-titre">Cliquez sur une compétence pour en savoir plus</p>
+      <div class="tel">
+        <p>
+          Durant cette année à Need for school et actuellement encore là-bas,
+          j'ai pu acquérir des compétences dans différents domaines.
+          <br /><br /><br />
+          Que se soit dans le front-end et le back-end avec l'utilisation de
+          <strong> html, css, php et js </strong>. Ou la téchnologie
+          <strong>Git</strong> et l'utilisation de gitlab et github, ou encore
+          l'hébergement et la base de donnée.
         </p>
       </div>
-      <div class="horizontal">
-        <div class="block-image block-image2">
-          <img src="projet/backtopixel1/projet2.png" alt="" />
-          <p>Projet Back to pixel 1</p>
-          <a href=""><button>En savoir plus</button></a>
-        </div>
-        <div class="block-image block-image3">
-          <img src="projet/backtopixel2/backtopixel.png" alt="" />
-          <p>Projet Back to pixel 2</p>
-          <a href=""><button>En savoir plus</button></a>
-        </div>
-        <div class="block-image block-image4">
-          <img src="projet/projet cinéflix/projet3.png" alt="" />
-          <p>Projet Cinéflix</p>
-          <a href=""><button>En savoir plus</button></a>
-        </div>
-        <div class="block-image block-image5">
-          <img src="projet/portfoliozoe/portofoliozoe.png" alt="" />
-          <p>Un Portfolio</p>
-          <a href=""><button>En savoir plus</button></a>
-        </div>
-
-        <div class="block-image block-image6">
-          <img src="projet/gardons/gardons.png" alt="" />
-          <p>Gardons De Rouen</p>
-          <a href=""><button>En savoir plus</button></a>
+      <div class="competence" id="competence">
+        <div data-id="1" data-content="Github/Gitlab" class="point"></div>
+        <div data-id="2" data-content="Front-End" class="point"></div>
+        <div data-id="8" data-content="Back-End" class="point"></div>
+        <div
+          data-id="5"
+          data-content="Bibliothèques JS/CSS"
+          class="point"
+        ></div>
+        <div data-id="6" data-content="Admin System" class="point"></div>
+        <div
+          data-id="7"
+          data-content="Cloud & Hébergement "
+          class="point"
+        ></div>
+      </div>
+      <div class="tel">
+        <div id="projet" class="projet_tel">
+          <h2 class="titre">MES RÉALISATIONS</h2>
+          <div class="skill" data-aos="fade-up">
+            <div class="projet_container">
+              <img
+                class="projet_image"
+                src="img/herosos.png"
+                alt="projet heros SOS "
+                loading="lazy"
+              />
+              <p>Projet cours Heros-SOS</p>
+              <p>
+                Création d'une plateforme interactive et dynamique en utilisant
+                PHP et gestion de base de données.
+              </p>
+            </div>
+            <div class="projet_container">
+              <img
+                class="projet_image"
+                src="img/restyle.png"
+                alt="projet heros SOS "
+                loading="lazy"
+              />
+              <p>Projet cours Restyle</p>
+              <p>
+                Création d'une plateforme de revente de vêtements en utilisant
+                des bibliothèques CSS/JS.
+              </p>
+            </div>
+            <div class="projet_container">
+              <img
+                class="projet_image"
+                src="img/cineflix2.png"
+                alt="projet heros SOS "
+                loading="lazy"
+              />
+              <p>Projet cours Cinéflix</p>
+              <p>
+                Création d'une landing page pour un site de streaming vidéo.
+              </p>
+            </div>
+            <div class="projet_container">
+              <img
+                class="projet_image"
+                src="img/projet_portfolio.png"
+                alt="projet heros SOS "
+                loading="lazy"
+              />
+              <p>Projet perso Portfolio</p>
+              <p>
+                Création d'un portfolio pour une connaissance, réalisé durant
+                mon temps libre.
+              </p>
+            </div>
+            <div class="projet_container">
+              <p>Pour plus de Réalisations</p>
+              <a
+                target="_blank"
+                id="voir_plus"
+                href="https://github.com/TEAMORTIE"
+                >Voir Plus</a
+              >
+            </div>
+          </div>
         </div>
       </div>
+      <h2 class="titre" id="skills">Mes Skills</h2>
 
-      <h2 class="titre">Mes compétences</h2>
-      <div class="competence">
-        <div class="trou"><img src="img/trounoir2.png " alt="" /></div>
-        <div class="rond"><img src="img/rond.png" alt="" /></div>
-        <div class="text-competence1">
-          Développement Front-End
-          <ul>
-            <li>HTML5</li>
-            <li>CSS</li>
-            <li>Responsive Design</li>
-          </ul>
+      <div class="skill" data-aos="fade-up">
+        <div class="skill_container html_container">
+          <img
+            id="html"
+            src="img/html-transparent.png"
+            alt="HTML"
+            loading="lazy"
+          />
+
+          <div class="niveau_container">
+            <div class="niveau">
+              <span>Débutant</span>
+              <span>Intermédiaire</span>
+              <span>Avancé</span>
+              <span>Expert</span>
+            </div>
+            <div class="progress-bar">
+              <div
+                class="progress"
+                data-width="75"
+                style="background: linear-gradient(90deg, #ff8c00, #ff1e00)"
+              ></div>
+            </div>
+          </div>
         </div>
-        <div class="text-competence2">
-          Version Control
-          <ul>
-            <li>GIT</li>
-            <li>GITHUB</li>
-          </ul>
+        <div class="skill_container css_container">
+          <img
+            id="css"
+            src="img/css-transparent.png"
+            alt="css"
+            loading="lazy"
+          />
+          <div class="niveau_container">
+            <div class="niveau">
+              <span>Débutant</span>
+              <span>Intermédiaire</span>
+              <span>Avancé</span>
+              <span>Expert</span>
+            </div>
+            <div class="progress-bar">
+              <div
+                class="progress"
+                data-width="65"
+                style="background: linear-gradient(90deg, #2196f3, #0c4272)"
+              ></div>
+            </div>
+          </div>
         </div>
-        <div class="text-competence3">
-          Hébergement
-          <ul>
-            <li>GitHub Pages.</li>
-            <li>
-              Configuration <br />
-              domaine personnalisé.
-            </li>
-          </ul>
+        <div class="skill_container php_container">
+          <img
+            id="php"
+            src="img/php-transparent.png"
+            alt="php"
+            loading="lazy"
+          />
+          <div class="niveau_container">
+            <div class="niveau">
+              <span>Débutant</span>
+              <span>Intermédiaire</span>
+              <span>Avancé</span>
+              <span>Expert</span>
+            </div>
+            <div class="progress-bar">
+              <div
+                class="progress"
+                data-width="45"
+                style="background: linear-gradient(90deg, #ee00ff, #89038e)"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill_container tailwind_container">
+          <img
+            id="tailwind"
+            src="img/tailwind-transparent.png"
+            alt="tailwind"
+            loading="lazy"
+          />
+          <div class="niveau_container">
+            <div class="niveau">
+              <span>Débutant</span>
+              <span>Intermédiaire</span>
+              <span>Avancé</span>
+              <span>Expert</span>
+            </div>
+            <div class="progress-bar">
+              <div
+                class="progress"
+                data-width="50"
+                style="background: linear-gradient(90deg, #6cdaff, #37a2ff)"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill_container js_container">
+          <img
+            id="js"
+            src="img/js-transparent.png"
+            alt="JavaScript"
+            loading="lazy"
+          />
+          <div class="niveau_container">
+            <div class="niveau">
+              <span>Débutant</span>
+              <span>Intermédiaire</span>
+              <span>Avancé</span>
+              <span>Expert</span>
+            </div>
+            <div class="progress-bar">
+              <div
+                class="progress"
+                data-width="20"
+                style="background: linear-gradient(90deg, #ffe600, #c0a600)"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill_container git_container">
+          <img
+            id="git"
+            src="img/git-transparent.png"
+            alt="git"
+            loading="lazy"
+          />
+          <div class="niveau_container">
+            <div class="niveau">
+              <span>Débutant</span>
+              <span>Intermédiaire</span>
+              <span>Avancé</span>
+              <span>Expert</span>
+            </div>
+            <div class="progress-bar">
+              <div
+                data-width="40"
+                class="progress"
+                style="background: linear-gradient(90deg, #ff5900, #d46600)"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact" id="contact" data-aos="fade-up">
+        <h2 class="titre">CONTACTEZ-MOI</h2>
+        <div class="container_contact">
+          <p>Si vous souhaitez me contacter !</p>
+          <div class="container_contactimg">
+            <?xml version="1.0" standalone="no"?>
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+            <svg
+              version="1.0"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30px"
+              height="30px"
+              viewBox="0 0 997.000000 1280.000000"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <metadata>
+                Created by potrace 1.15, written by Peter Selinger 2001-2017
+              </metadata>
+              <g
+                transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                fill="#c48839"
+                stroke="none"
+              >
+                <path
+                  d="M3045 12782 c-27 -10 -230 -122 -450 -248 -220 -127 -506 -291 -635
+  -364 -301 -171 -350 -219 -382 -374 -23 -106 -15 -124 273 -615 480 -820 1464
+  -2453 1505 -2500 54 -59 132 -106 213 -127 113 -28 117 -27 650 279 262 151
+  553 318 648 371 236 134 298 204 325 370 21 129 12 151 -211 521 -1045 1729
+  -1554 2566 -1580 2597 -73 87 -245 131 -356 90z"
+                />
+                <path
+                  d="M1193 11440 c-530 -152 -892 -537 -1069 -1139 -285 -967 -66 -2490
+  601 -4181 675 -1710 1696 -3334 2810 -4469 954 -971 1864 -1506 2775 -1632
+  127 -18 508 -18 625 -1 218 33 412 85 604 161 86 35 177 76 189 86 5 4 -872
+  1531 -975 1695 -105 168 -311 504 -630 1030 -170 279 -140 257 -293 219 -128
+  -31 -394 -34 -545 -5 -331 61 -711 251 -1050 523 -139 111 -397 363 -527 513
+  -197 228 -397 506 -563 785 -101 170 -151 270 -218 440 -168 426 -272 819
+  -323 1220 -25 198 -23 540 5 722 53 353 178 647 377 890 30 36 52 68 50 72 -2
+  3 -56 95 -120 204 -168 286 -414 732 -816 1477 -492 914 -776 1420 -795 1419
+  -5 0 -56 -13 -112 -29z"
+                />
+                <path
+                  d="M7690 4686 c-19 -8 -237 -130 -485 -273 -247 -143 -533 -306 -635
+  -363 -199 -113 -268 -169 -308 -251 -51 -105 -48 -215 7 -313 701 -1244 1679
+  -2927 1734 -2984 18 -18 61 -48 97 -65 59 -29 73 -32 160 -32 l96 0 159 92
+  c88 50 385 220 660 377 275 158 512 299 528 314 41 38 76 95 98 160 22 63 26
+  199 7 253 -6 19 -100 185 -208 369 -109 184 -403 688 -655 1120 -656 1125
+  -854 1460 -887 1502 -18 23 -55 50 -96 70 -57 28 -78 33 -152 35 -53 2 -98 -3
+  -120 -11z"
+                />
+              </g>
+            </svg>
+
+            <p>
+              <span><a href="tel:+33695435459">06 95 43 54 59</a></span>
+            </p>
+          </div>
+          <div class="container_contactimg">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg
+              width="30px"
+              height="30px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z"
+                fill="#c48839"
+              />
+            </svg>
+            <p>
+              <span
+                ><a href="mailto:bulte.kevin@nfs.school"
+                  >bulte.kevin@nfs.school</a
+                ></span
+              >
+            </p>
+            <div class="fleche_reseaux">
+              <?xml version="1.0" standalone="no"?>
+              <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+              <svg
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="100px"
+                height="100px"
+                viewBox="0 0 1280.000000 1277.000000"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <metadata>
+                  Created by potrace 1.15, written by Peter Selinger 2001-2017
+                </metadata>
+                <g
+                  transform="translate(0.000000,1277.000000) scale(0.100000,-0.100000)"
+                  fill="#c48839"
+                  stroke="none"
+                >
+                  <path
+                    d="M1492 12632 c-174 -882 -688 -2559 -1376 -4484 -58 -163 -106 -300
+  -106 -304 0 -4 64 55 143 132 274 269 534 460 854 626 207 108 469 217 484
+  201 3 -5 12 -57 18 -118 34 -315 129 -768 251 -1190 409 -1416 1176 -2924
+  2097 -4122 1530 -1991 3425 -3149 5478 -3347 83 -8 188 -17 235 -21 l85 -6
+  -70 62 c-131 115 -335 330 -415 437 -326 434 -232 743 283 933 308 114 809
+  192 1457 229 323 18 982 31 1387 28 399 -3 497 3 248 16 -71 4 -242 18 -380
+  32 -2193 218 -4255 871 -5935 1878 -983 589 -1831 1315 -2464 2109 -741 930
+  -1224 1990 -1420 3118 l-6 36 97 -18 c449 -84 985 -267 1482 -505 85 -41 155
+  -74 157 -74 1 0 -50 71 -115 158 -518 697 -1027 1447 -1418 2092 -513 845
+  -850 1551 -978 2047 -19 74 -35 143 -35 154 0 10 -3 19 -7 19 -5 0 -18 -53
+  -31 -118z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="tel">
+            <!-- From Uiverse.io by PriyanshuGupta28 -->
+            <div class="example-2">
+              <div class="icon-content">
+                <a
+                  href="mailto:bulte.kevin@nfs.school"
+                  aria-label="Email"
+                  data-social="Email"
+                  target="_blank"
+                >
+                  <div class="filled"></div>
+                  <?xml version="1.0" encoding="iso-8859-1"?>
+                  <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                  <svg
+                    fill="#c48839"
+                    height="800px"
+                    width="800px"
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 75.294 75.294"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M66.097,12.089h-56.9C4.126,12.089,0,16.215,0,21.286v32.722c0,5.071,4.126,9.197,9.197,9.197h56.9
+                      c5.071,0,9.197-4.126,9.197-9.197V21.287C75.295,16.215,71.169,12.089,66.097,12.089z M61.603,18.089L37.647,33.523L13.691,18.089
+                      H61.603z M66.097,57.206h-56.9C7.434,57.206,6,55.771,6,54.009V21.457l29.796,19.16c0.04,0.025,0.083,0.042,0.124,0.065
+                      c0.043,0.024,0.087,0.047,0.131,0.069c0.231,0.119,0.469,0.215,0.712,0.278c0.025,0.007,0.05,0.01,0.075,0.016
+                      c0.267,0.063,0.537,0.102,0.807,0.102c0.001,0,0.002,0,0.002,0c0.002,0,0.003,0,0.004,0c0.27,0,0.54-0.038,0.807-0.102
+                      c0.025-0.006,0.05-0.009,0.075-0.016c0.243-0.063,0.48-0.159,0.712-0.278c0.044-0.022,0.088-0.045,0.131-0.069
+                      c0.041-0.023,0.084-0.04,0.124-0.065l29.796-19.16v32.551C69.295,55.771,67.86,57.206,66.097,57.206z"
+                      />
+                    </g>
+                  </svg>
+                </a>
+                <div class="tooltip">Email</div>
+              </div>
+              <div class="icon-content">
+                <a
+                  target="_blank"
+                  href="https://github.com/TEAMORTIE"
+                  aria-label="GitHub"
+                  data-social="github"
+                >
+                  <div class="filled"></div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="#c48839"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                      fill="#c48839"
+                    ></path>
+                  </svg>
+                </a>
+                <div class="tooltip">GitHub</div>
+              </div>
+              <div class="icon-content">
+                <a
+                  href="https://www.linkedin.com/in/k%C3%A9vin-bult%C3%A9-375057308"
+                  aria-label="LinkedIn"
+                  data-social="linkedin"
+                  target="_blank"
+                >
+                  <div class="filled"></div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="#c48839"
+                    class="bi bi-linkedin"
+                    viewBox="0 0 16 16"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                      fill="#c48839"
+                    ></path>
+                  </svg>
+                </a>
+                <div class="tooltip">LinkedIn</div>
+              </div>
+              <div class="icon-content">
+                <a
+                  href="https://www.instagram.com/keeevv1"
+                  aria-label="Instagram"
+                  data-social="instagram"
+                  target="_blank"
+                >
+                  <div class="filled"></div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                      fill="#c48839"
+                    ></path>
+                  </svg>
+                </a>
+                <div class="tooltip">Instagram</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+    <footer>
+      <img id="img_footer" src="img/logo_portfolio.jpg" alt="" />
+      <p>&#169; 2025 - Kévin Bulté - Porfolio</p>
+    </footer>
+    <script src="js/burger.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+      if (window.innerWidth >= 800) {
+        var script = document.createElement("script");
+        script.src = "js/script.js";
+        script.type = "text/javascript";
+        document.body.appendChild(script);
+      }
+    </script>
+
+    <script src="js/scriptfond.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
